@@ -40,7 +40,7 @@ let isTeacherPresent = teachers.indexOf(teacherToDelete) + 1;
 
 if (isTeacherPresent) {
   console.log(teachers);
-  teachers.splice(teachers.indexOf("Ed"), 1);
+  teachers.splice(teachers.indexOf(teacherToDelete), 1);
   console.log(teachers);
 } else {
   console.log("L'insegnante non è presente nella lista");
