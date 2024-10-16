@@ -2,6 +2,7 @@ const teachers = ["Nathan", "Ed", "Fabio", "Phil", "Carlo", "Lewis", "Luca"]; //
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
+
 // ^ SOLUZIONE MIGLIORE, SENZA CICLO
 const reversedTeachers = teachers.toReversed();
 console.log(teachers, reversedTeachers);
@@ -30,4 +31,6 @@ console.log(teachers, longNames);
 // 3. Rimuovi 'Ed' dall'array teachers
 
 // ^ LA MIA SOLUZIONE FUNZIONA SOLO SE 'ED' E' PRESENTE NELL'ARRAY, SE NON SAPESSI SE E' PRESENTE OPPURE NO DOVREI AGGIUNGERE UN CONTROLLO
+console.log(teachers);
 teachers.splice(teachers.indexOf("Ed"), 1);
+console.log(teachers);
