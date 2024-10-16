@@ -30,7 +30,15 @@ console.log(teachers, longNames);
 
 // 3. Rimuovi 'Ed' dall'array teachers
 
-// ^ LA MIA SOLUZIONE FUNZIONA SOLO SE 'ED' E' PRESENTE NELL'ARRAY, SE NON SAPESSI SE E' PRESENTE OPPURE NO DOVREI AGGIUNGERE UN CONTROLLO
-console.log(teachers);
-teachers.splice(teachers.indexOf("Ed"), 1);
-console.log(teachers);
+// ^ CONTROLLO PRIMA DI TUTTO CHE SIA PRESENTE NELL'ARRAY L'ELEMENTO CHE VOGLIO ELIMINARE, DOPODICHE' LO ELIMINO
+
+const teacherToDelete = "Ed";
+let isTeacherPresent = teachers.indexOf(teacherToDelete) + 1;
+
+if (isTeacherPresent) {
+  console.log(teachers);
+  teachers.splice(teachers.indexOf("Ed"), 1);
+  console.log(teachers);
+} else {
+  console.log("L'insegnante non è presente nella lista");
+}
