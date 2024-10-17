@@ -11,7 +11,11 @@ console.log(teachers, reversedTeachers);
 const reversedTeachersWithCycle = [];
 
 for (i = 0; i < teachers.length; i++) {
-  reversedTeachersWithCycle[i] = teachers[teachers.length - i - 1];
+  let currentTeacher = teachers[i];
+  reversedTeachersWithCycle.unshift(currentTeacher);
+
+  // ^ SOLUZIONE ALTERNATIVA
+  // reversedTeachersWithCycle[i] = teachers[teachers.length - i - 1];
 }
 console.log(teachers, reversedTeachersWithCycle);
 
