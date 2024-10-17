@@ -47,6 +47,9 @@ console.log(lewisIndex);
 // separata da virgole e salvala nella variabile teachersString
 const teachersString = teachers.toString();
 console.log(teachersString);
+// ^ OPPURE
+const teachersString2 = teachers.join(",");
+console.log(teachersString2);
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
